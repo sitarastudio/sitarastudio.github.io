@@ -1790,9 +1790,11 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 		#nav a {
-			padding: 0 0.75em;
-			height: 3.5em;
-			line-height: 3.5em;
+			padding: 0;
+			height: 4em;
+			line-height: 4em;
+			background: none;
+			background-color: rgba(0, 0, 0, 0);
 		}
 
 			#nav a span {
@@ -1800,11 +1802,42 @@ input, select, textarea {
 			}
 
 			#nav a i {
+				display: none;
+			}
+
+			#nav a .icon-image {
 				position: absolute;
 				left: 50%;
 				top: 50%;
 				transform: translate(-50%, -50%);
-				font-size: 1.25em;
+				width: 2em;
+				height: 2em;
+			}
+
+			#nav a[href$="#about"] .icon-image {
+				background-image: url('assets/css/images/icons/profile.png');
+			}
+
+			#nav a[href$="#music"] .icon-image {
+				background-image: url('assets/css/images/icons/music.png');
+			}
+
+			#nav a[href$="#art"] .icon-image {
+				background-image: url('assets/css/images/icons/paintbrush.png');
+			}
+
+			#nav a[href$="#contact"] .icon-image {
+				background-image: url('assets/css/images/icons/email.png');
+			}
+
+			#nav a[href$="youtube"] .icon-image {
+				background-image: url('assets/css/images/icons/youtube.png');
+			}
+
+			#nav a .icon-image {
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
 			}
 	}
 
