@@ -1788,6 +1788,26 @@ input, select, textarea {
 			z-index: 1;
 		}
 
+	@media screen and (max-width: 736px) {
+		#nav a {
+			padding: 0 0.75em;
+			height: 3.5em;
+			line-height: 3.5em;
+		}
+
+			#nav a span {
+				display: none;
+			}
+
+			#nav a i {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 1.25em;
+			}
+	}
+
 		#nav a::before {
 			content: '';
 			position: absolute;
