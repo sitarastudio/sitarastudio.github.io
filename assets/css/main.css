@@ -1757,7 +1757,7 @@ input, select, textarea {
 
 /* Nav */
 
-	#nav a {
+	#nav .nav-button {
 		display: inline-block;
 		height: 4.25em;
 		line-height: 4.25em;
@@ -1779,7 +1779,7 @@ input, select, textarea {
 		background-color: rgba(0, 0, 0, 0);
 	}
 
-		#nav a span {
+		#nav .nav-button span {
 			display: block;
 			font-family: 'Courier Prime', monospace;
 			font-size: 1em;
@@ -1787,6 +1787,58 @@ input, select, textarea {
 			position: relative;
 			z-index: 1;
 		}
+
+	@media screen and (max-width: 736px) {
+		#nav .nav-button {
+			padding: 0;
+			height: 4em;
+			line-height: 4em;
+			background: none;
+			background-color: rgba(0, 0, 0, 0);
+		}
+
+			#nav .nav-button span {
+				display: none !important;
+			}
+
+			#nav .nav-button i {
+				display: none;
+			}
+
+			#nav .nav-button .icon-image {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				width: 2em;
+				height: 2em;
+				display: block !important;
+				opacity: 1 !important;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			#nav .nav-button[href$="#about"] .icon-image {
+				background-image: url('assets/css/images/icons/profile.png');
+			}
+
+			#nav .nav-button[href$="#music"] .icon-image {
+				background-image: url('assets/css/images/icons/music.png');
+			}
+
+			#nav .nav-button[href$="#art"] .icon-image {
+				background-image: url('assets/css/images/icons/paintbrush.png');
+			}
+
+			#nav .nav-button[href$="#contact"] .icon-image {
+				background-image: url('assets/css/images/icons/email.png');
+			}
+
+			#nav .nav-button[href$="youtube"] .icon-image {
+				background-image: url('assets/css/images/icons/youtube.png');
+			}
+	}
 
 	@media screen and (max-width: 736px) {
 		#nav a {
