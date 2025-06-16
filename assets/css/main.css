@@ -1777,6 +1777,9 @@ input, select, textarea {
 		position: relative;
 		background: none;
 		background-color: rgba(0, 0, 0, 0);
+		opacity: 1;
+		pointer-events: auto;
+		z-index: 1;
 	}
 
 		#nav .nav-button span {
@@ -1786,6 +1789,7 @@ input, select, textarea {
 			font-weight: normal;
 			position: relative;
 			z-index: 1;
+			color: #ffffff;
 		}
 
 	@media screen and (max-width: 736px) {
@@ -1795,6 +1799,7 @@ input, select, textarea {
 			line-height: 4em;
 			background: none;
 			background-color: rgba(0, 0, 0, 0);
+			opacity: 1 !important;
 		}
 
 			#nav .nav-button span {
@@ -1817,26 +1822,24 @@ input, select, textarea {
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
-			}
-
-			#nav .nav-button[href$="#about"] .icon-image {
-				background-image: url('assets/css/images/icons/profile.png');
+				background-image: url('assets/css/icons/profile.png');
+				z-index: 1;
 			}
 
 			#nav .nav-button[href$="#music"] .icon-image {
-				background-image: url('assets/css/images/icons/music.png');
+				background-image: url('assets/css/icons/music.png');
 			}
 
 			#nav .nav-button[href$="#art"] .icon-image {
-				background-image: url('assets/css/images/icons/paintbrush.png');
+				background-image: url('assets/css/icons/paintbrush.png');
 			}
 
 			#nav .nav-button[href$="#contact"] .icon-image {
-				background-image: url('assets/css/images/icons/email.png');
+				background-image: url('assets/css/icons/email.png');
 			}
 
 			#nav .nav-button[href$="youtube"] .icon-image {
-				background-image: url('assets/css/images/icons/youtube.png');
+				background-image: url('assets/css/icons/youtube.png');
 			}
 	}
 
