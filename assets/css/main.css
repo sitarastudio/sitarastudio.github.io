@@ -1757,8 +1757,13 @@ input, select, textarea {
 
 /* Nav */
 
+	#nav {
+		position: relative;
+		z-index: 10;
+	}
+
 	#nav .nav-button {
-		display: inline-block;
+		display: block !important;
 		height: 4.25em;
 		line-height: 4.25em;
 		text-decoration: none;
@@ -1777,7 +1782,8 @@ input, select, textarea {
 		position: relative;
 		background: none;
 		background-color: rgba(0, 0, 0, 0);
-		opacity: 1;
+		opacity: 1 !important;
+		visibility: visible !important;
 		pointer-events: auto;
 		z-index: 1;
 	}
@@ -1790,16 +1796,23 @@ input, select, textarea {
 			position: relative;
 			z-index: 1;
 			color: #ffffff;
+			visibility: visible !important;
 		}
 
 	@media screen and (max-width: 736px) {
+		#nav {
+			width: 100%;
+		}
+
 		#nav .nav-button {
+			display: block !important;
 			padding: 0;
 			height: 4em;
 			line-height: 4em;
 			background: none;
 			background-color: rgba(0, 0, 0, 0);
 			opacity: 1 !important;
+			visibility: visible !important;
 		}
 
 			#nav .nav-button span {
@@ -1824,6 +1837,7 @@ input, select, textarea {
 				background-position: center;
 				background-image: url('assets/css/icons/profile.png');
 				z-index: 1;
+				visibility: visible !important;
 			}
 
 			#nav .nav-button[href$="#music"] .icon-image {
