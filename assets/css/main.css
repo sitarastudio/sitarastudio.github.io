@@ -2231,9 +2231,68 @@ body.is-preload #wrapper {
 		border: none;
 		border-radius: 4px;
 		color: #fff;
-		margin: 0 0 1em 0;
 		padding: 0.75em;
 		width: 100%;
+	}
+
+	.contact-panel .row.gtr-uniform {
+		margin: 0 !important;
+		padding: 0 !important;
+		width: 100%;
+		display: block;
+	}
+
+	.contact-panel form {
+		margin: 0 !important;
+		padding: 0 !important;
+		width: 100%;
+	}
+
+	.contact-panel form > * {
+		margin: 0 !important;
+		padding: 0 !important;
+		width: 100%;
+		display: block;
+	}
+
+	.contact-panel form .col-6,
+	.contact-panel form .col-12 {
+		padding-bottom: 1.5em !important;
+	}
+
+	.contact-panel form .col-12:last-child {
+		padding-bottom: 0 !important;
+	}
+
+	.contact-panel .col-6,
+	.contact-panel .col-12 {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+	}
+
+	.contact-panel .col-6 input,
+	.contact-panel .col-12 input,
+	.contact-panel .col-12 textarea {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0.75em !important;
+		box-sizing: border-box !important;
+	}
+
+	.contact-panel .col-12 ul.actions {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
+	}
+
+	.contact-panel .col-12 ul.actions li {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		box-sizing: border-box !important;
 	}
 
 	.contact-panel textarea {
@@ -2255,12 +2314,17 @@ body.is-preload #wrapper {
 	}
 
 	.contact-panel .actions {
-		text-align: center;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5em;
+		justify-content: center;
+		align-items: center;
+		margin: 2em 0;
 	}
 
 	.contact-panel .actions li {
-		display: inline-block;
-		margin: 0 1em;
+		display: block;
+		margin: 0;
 	}
 
 	.contact-panel .actions input[type="submit"],
