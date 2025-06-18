@@ -2207,6 +2207,85 @@ body.is-preload #wrapper {
 	}
 }
 
+/* Contact Panel */
+
+	.contact-panel {
+		background: rgba(0, 0, 0, 0.9);
+		color: #fff;
+	}
+
+	.contact-panel header h2 {
+		color: #fff;
+		margin-bottom: 1em;
+	}
+
+	.contact-panel header p {
+		color: rgba(255, 255, 255, 0.7);
+		margin-bottom: 2em;
+	}
+
+	.contact-panel input[type="text"],
+	.contact-panel input[type="email"],
+	.contact-panel textarea {
+		background: rgba(255, 255, 255, 0.1);
+		border: none;
+		border-radius: 4px;
+		color: #fff;
+		margin: 0 0 1em 0;
+		padding: 0.75em;
+		width: 100%;
+	}
+
+	.contact-panel textarea {
+		height: 150px;
+		resize: vertical;
+	}
+
+	.contact-panel input[type="text"]:focus,
+	.contact-panel input[type="email"]:focus,
+	.contact-panel textarea:focus {
+		background: rgba(255, 255, 255, 0.2);
+		outline: none;
+	}
+
+	.contact-panel input[type="text"]::placeholder,
+	.contact-panel input[type="email"]::placeholder,
+	.contact-panel textarea::placeholder {
+		color: rgba(255, 255, 255, 0.5);
+	}
+
+	.contact-panel .actions {
+		text-align: center;
+	}
+
+	.contact-panel .actions li {
+		display: inline-block;
+		margin: 0 1em;
+	}
+
+	.contact-panel .actions input[type="submit"],
+	.contact-panel .actions input[type="reset"] {
+		background: #fff;
+		color: #000;
+		padding: 0.75em 2em;
+		text-decoration: none;
+		border-radius: 4px;
+		transition: background-color 0.3s ease;
+	}
+
+	.contact-panel .actions input[type="submit"]:hover,
+	.contact-panel .actions input[type="reset"]:hover {
+		background: rgba(255, 255, 255, 0.8);
+	}
+
+	.contact-panel .actions input[type="submit"].primary {
+		background: #4CAF50;
+	}
+
+	.contact-panel .actions input[type="submit"].primary:hover {
+		background: #45a049;
+	}
+
 /* Main */
 
 	#main {
