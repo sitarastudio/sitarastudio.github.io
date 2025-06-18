@@ -119,9 +119,59 @@ input, select, textarea {
 			justify-content: center;
 		}
 
+		/* Music and Art Panel Styles */
 		article#music .col-4,
 		article#art .col-4 {
 			text-align: center;
+			word-wrap: break-word;
+			overflow-wrap: break-word;
+			max-width: 100%;
+			box-sizing: border-box;
+			overflow: hidden;
+			padding: 10px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+			width: 100%;
+			height: 100%;
+		}
+
+		article#music .col-4 a,
+		article#art .col-4 a {
+			width: 100%;
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			padding: 5px;
+		}
+
+		article#music .col-4 img,
+		article#art .col-4 img {
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+			margin: 0 auto;
+			display: block;
+			padding: 5px;
+		}
+
+		/* Ensure images and links stay within their containers */
+		article#music .col-4 a.image.fit,
+		article#art .col-4 a.image.fit {
+			width: 100%;
+			display: block;
+			overflow: hidden;
+		}
+
+		article#music .col-4 a.image.fit img,
+		article#art .col-4 a.image.fit img {
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+			display: block;
+			padding: 5px;
 		}
 
 		.row.gtr-uniform > * > :last-child {
