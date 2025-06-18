@@ -113,6 +113,17 @@ input, select, textarea {
 			margin: 0 auto;
 		}
 
+		/* Center images in music and art sections */
+		article#music .row,
+		article#art .row {
+			justify-content: center;
+		}
+
+		article#music .col-4,
+		article#art .col-4 {
+			text-align: center;
+		}
+
 		.row.gtr-uniform > * > :last-child {
 			margin-bottom: 0;
 		}
@@ -1741,6 +1752,9 @@ input, select, textarea {
 	#nav {
 		position: relative;
 		z-index: 10;
+		text-align: center;
+		padding: 1em 0;
+		margin: 1em auto 0;
 	}
 
 	#nav .nav-button {
