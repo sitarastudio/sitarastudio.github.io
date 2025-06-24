@@ -117,21 +117,63 @@ input, select, textarea {
 @media screen and (min-width: 737px) {
 	article#music .col-4,
 	article#art .col-4 {
-		width: 33.33333%;
+		width: 30%;
 		float: left;
+		margin: 0 2% 0 0;
 	}
 
-	article#music section,
-	article#art section {
-		margin-bottom: 6em !important;
-		padding-bottom: 6em !important;
+	article#music .gallery-section,
+	article#art .gallery-section {
+		margin-bottom: 0.5em !important;
+		padding-bottom: 0.5em !important;
 		border-bottom: 1px solid transparent !important;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
 	}
 
-	article#music .row:last-child,
-	article#art .row:last-child {
+	article#music .gallery-section .row:last-child,
+	article#art .gallery-section .row:last-child {
 		margin-bottom: 6em !important;
 	}
+
+	/* Move images closer to text */
+	article#music p + .gallery-section,
+	article#art p + .gallery-section {
+		margin-top: 2em !important;
+	}
+
+	/* Adjust art section image sizes */
+	@media screen and (min-width: 737px) {
+		article#art .col-4 a.image.fit img {
+			max-width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+	}
+
+	/* Adjust music section image sizes */
+	@media screen and (min-width: 737px) {
+		article#music .col-4 a.image.fit img {
+			max-width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+	}
+
+	/* Panel content width adjustments */
+	@media screen and (min-width: 737px) {
+		article#music .panel,
+		article#art .panel {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+	}
+}
+}
+}
+}
 }
 
 /* Mobile layout for music and art sections */
@@ -2406,7 +2448,7 @@ body.is-preload #wrapper {
 			transition: opacity 0.25s ease-in-out;
 			margin-bottom: 0;
 			position: relative;
-			padding: 3.5em 2.5em 6em 2.5em;
+			padding: 3.5em 2.5em 6em 2.5em !important;
 			width: 100%;
 		}
 
