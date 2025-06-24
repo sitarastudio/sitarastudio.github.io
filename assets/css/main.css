@@ -2449,7 +2449,7 @@ body.is-preload #wrapper {
 
 		#main > .panel {
 			width: 100%;
-			padding: 4em 0;
+			padding: 4em 4em;
 			background: #ffffff;
 			box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
 			border-radius: 0.5em;
@@ -2459,6 +2459,31 @@ body.is-preload #wrapper {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			margin: 0 auto;
+		}
+
+		@media screen and (min-width: 737px) {
+			article#music .panel,
+			article#art .panel {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 40px;
+			}
+			
+			article#music .gallery-section,
+			article#art .gallery-section {
+				margin: 0 auto;
+				padding: 0 20px;
+			}
+			
+			article#music .gallery-section .row:last-child,
+			article#art .gallery-section .row:last-child {
+				margin-bottom: 6em;
+			}
+			
+			article#music p + .gallery-section,
+			article#art p + .gallery-section {
+				margin-top: 2em;
+			}
 		}
 
 			#main > .panel.inactive {
