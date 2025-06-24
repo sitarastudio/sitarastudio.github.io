@@ -1850,24 +1850,10 @@ input, select, textarea {
 		line-height: 4.25em;
 		text-decoration: none;
 		color: #ffffff;
-		border: 0;
 		padding: 0 1.25em;
-		border-radius: 0.35em;
-		-moz-transition: background-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out;
-		box-shadow: 
-			0 0 15px rgba(189, 255, 189, 0.3);
-		animation: crackle 2s infinite;
-		will-change: box-shadow;
-		position: relative;
+		border: 1px solid #ffffff;
+		border-radius: 0;
 		background: none;
-		background-color: rgba(0, 0, 0, 0);
-		opacity: 1 !important;
-		visibility: visible !important;
-		pointer-events: auto;
-		z-index: 1;
 	}
 
 		#nav .nav-button span {
@@ -1878,7 +1864,6 @@ input, select, textarea {
 			position: relative;
 			z-index: 1;
 			color: #ffffff;
-			visibility: visible !important;
 		}
 
 	@media screen and (max-width: 736px) {
