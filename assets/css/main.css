@@ -120,6 +120,18 @@ input, select, textarea {
 		width: 33.33333%;
 		float: left;
 	}
+
+	article#music section,
+	article#art section {
+		margin-bottom: 6em !important;
+		padding-bottom: 6em !important;
+		border-bottom: 1px solid transparent !important;
+	}
+
+	article#music .row:last-child,
+	article#art .row:last-child {
+		margin-bottom: 6em !important;
+	}
 }
 
 /* Mobile layout for music and art sections */
@@ -137,6 +149,7 @@ input, select, textarea {
 			display: block;
 			margin: 0 !important;
 			padding: 0 !important;
+			margin-bottom: 3em;
 		}
 
 		/* Music and Art Panel Styles */
@@ -2393,7 +2406,7 @@ body.is-preload #wrapper {
 			transition: opacity 0.25s ease-in-out;
 			margin-bottom: 0;
 			position: relative;
-			padding: 3.5em 2.5em 2.5em 2.5em;
+			padding: 3.5em 2.5em 6em 2.5em;
 			width: 100%;
 		}
 
