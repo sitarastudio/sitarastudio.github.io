@@ -113,6 +113,24 @@ input, select, textarea {
 			margin: 0 auto;
 		}
 
+		/* Desktop layout for music and art sections */
+@media screen and (min-width: 737px) {
+	article#music .col-4,
+	article#art .col-4 {
+		width: 33.33333%;
+		float: left;
+	}
+}
+
+/* Mobile layout for music and art sections */
+@media screen and (max-width: 736px) {
+	article#music .col-4,
+	article#art .col-4 {
+		width: 100%;
+		float: none;
+	}
+}
+
 		/* Left-align images in music and art sections */
 		article#music .row,
 		article#art .row {
@@ -124,17 +142,40 @@ input, select, textarea {
 		/* Music and Art Panel Styles */
 		article#music .col-4,
 		article#art .col-4 {
-			text-align: left;
-			word-wrap: break-word;
-			overflow-wrap: break-word;
-			max-width: 100%;
+			width: 33.33333%;
+			margin: 0;
+			padding: 0.5em;
 			box-sizing: border-box;
-			overflow: hidden;
-			margin: 0 !important;
-			padding: 0 !important;
+			float: left;
+		}
+
+		article#music .col-4 .image,
+		article#art .col-4 .image {
 			display: block;
 			width: 100%;
-			height: 100%;
+			height: auto;
+			margin: 0;
+			padding: 0;
+		}
+
+		article#music .col-4 .image img,
+		article#art .col-4 .image img {
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+
+		article#music .col-4 a,
+		article#art .col-4 a {
+			display: block;
+			text-align: center;
+		}
+
+		article#music .col-4 img,
+		article#art .col-4 img {
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+			display: block;
 		}
 
 		article#music .col-4 .image,
@@ -156,29 +197,8 @@ input, select, textarea {
 			display: block;
 		}
 
-		article#music .col-4 a,
-		article#art .col-4 a {
-			width: 100%;
-			display: block;
-			text-align: center;
-			margin: 0 auto;
-			padding: 5px;
-		}
-
-		article#music .col-4 img,
-		article#art .col-4 img {
-			max-width: 100%;
-			height: auto;
-			object-fit: cover;
-			margin: 0 auto;
-			display: block;
-			padding: 5px;
-		}
-
-		/* Ensure images and links stay within their containers */
 		article#music .col-4 a.image.fit,
 		article#art .col-4 a.image.fit {
-			width: 100%;
 			display: block;
 			overflow: hidden;
 		}
@@ -189,7 +209,6 @@ input, select, textarea {
 			height: auto;
 			object-fit: cover;
 			display: block;
-			padding: 5px;
 		}
 
 		.row.gtr-uniform > * > :last-child {
@@ -2752,4 +2771,14 @@ body.is-preload #wrapper {
 				.row.gtr-200.gtr-uniform > * {
 					padding-top: 2.5em;
 				}
+}
+.images-container {
+    display: flex;
+    gap: 1em;
+    flex-wrap: nowrap;
+}
+
+.images-container a.image.fit {
+    flex: 1;
+    max-width: 50%;
 }
