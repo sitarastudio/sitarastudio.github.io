@@ -54,21 +54,21 @@
 }
 
 #contact .actions input[type="submit"] {
-    background: #4CAF50;
+    background: #A0B230;
     color: white;
 }
 
 #contact .actions input[type="submit"]:hover {
-    background: #45a049;
+    background: #B3C440;
     transform: translateY(-1px);
 }
 
 #contact .actions input[type="reset"] {
-    background: #f44336;
+    background: #556B2F;
     color: white;
 }
 
 #contact .actions input[type="reset"]:hover {
-    background: #da190b;
+    background: #6B8E23;
     transform: translateY(-1px);
 }
