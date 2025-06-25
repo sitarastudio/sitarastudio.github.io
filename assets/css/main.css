@@ -2583,42 +2583,7 @@ body.is-preload #wrapper {
 						object-fit: contain;
 					}
 
-					#main > .panel.intro .pic .arrow {
-						display: block;
-						position: absolute;
-						right: 10px;
-						top: 50%;
-						margin-top: -1.25em;
-						width: 2.5em;
-						height: 2.5em;
-						background: #000;
-						background: rgba(0, 0, 0, 0.75);
-						color: #ffffff;
-						text-align: center;
-						line-height: 2.5em;
-						font-size: 1.4em;
-						z-index: 1;
-						-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
-						-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
-						-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
-						transition: width .15s ease-in-out, padding-right .15s ease-in-out;
-					}
 
-						#main > .panel.intro .pic .arrow:before {
-							position: relative;
-							padding-right: 0;
-							top: 0.125em;
-						}
-
-						#main > .panel.intro .pic .arrow span {
-							display: block;
-							text-indent: -9999px;
-						}
-
-					#main > .panel.intro .pic:hover .arrow {
-						width: 2.75em;
-						padding-right: 0.25em;
-					}
 
 							text-align: center;
 						}
