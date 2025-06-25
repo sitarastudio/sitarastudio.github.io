@@ -2535,6 +2535,23 @@ body.is-preload #wrapper {
 
 				#main > .panel {
 					padding: 2em 1.5em 1.5em 1.5em;
+					width: 100%;
+					max-width: 100%;
+					overflow-x: hidden;
+				}
+
+				#main > .panel.intro .pic {
+					width: 100%;
+					height: auto;
+					max-width: 100%;
+					object-fit: contain;
+				}
+
+				#main > .panel.intro .pic img {
+					width: 100%;
+					height: auto;
+					max-width: 100%;
+					overflow: hidden;
 				}
 
 			}
