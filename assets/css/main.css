@@ -2404,31 +2404,32 @@ body.is-preload #wrapper {
 		margin: 2em 0;
 	}
 
-	.contact-panel .actions li {
+	#contact .actions li {
 		display: block;
 		margin: 0;
 	}
 
-	.contact-panel .actions input[type="submit"],
-	.contact-panel .actions input[type="reset"] {
-		background: #fff;
-		color: #000;
+	#contact .actions input[type="submit"],
+	#contact .actions input[type="reset"] {
+		background: #4CAF50;
+		color: #fff;
 		padding: 0.75em 2em;
 		text-decoration: none;
 		border-radius: 4px;
 		transition: background-color 0.3s ease;
+		width: 100%;
 	}
 
-	.contact-panel .actions input[type="submit"]:hover,
-	.contact-panel .actions input[type="reset"]:hover {
-		background: rgba(255, 255, 255, 0.8);
+	#contact .actions input[type="submit"]:hover,
+	#contact .actions input[type="reset"]:hover {
+		background: #45a049;
 	}
 
-	.contact-panel .actions input[type="submit"].primary {
+	#contact .actions input[type="submit"].primary {
 		background: #4CAF50;
 	}
 
-	.contact-panel .actions input[type="submit"].primary:hover {
+	#contact .actions input[type="submit"].primary:hover {
 		background: #45a049;
 	}
 

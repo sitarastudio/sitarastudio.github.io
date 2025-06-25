@@ -1,0 +1,74 @@
+#contact {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact header h2 {
+    color: #ffffff;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#contact header p {
+    color: #ffffff;
+    opacity: 0.8;
+    margin-bottom: 2em;
+    line-height: 1.5;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    background: #2d2d2d;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 0.75em;
+    width: 100%;
+    margin-bottom: 1em;
+    transition: all 0.3s ease;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+#contact .actions input[type="submit"],
+#contact .actions input[type="reset"] {
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 4px;
+    border: none;
+    font-weight: normal;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#contact .actions input[type="submit"] {
+    background: #4CAF50;
+    color: white;
+}
+
+#contact .actions input[type="submit"]:hover {
+    background: #45a049;
+    transform: translateY(-1px);
+}
+
+#contact .actions input[type="reset"] {
+    background: #f44336;
+    color: white;
+}
+
+#contact .actions input[type="reset"]:hover {
+    background: #da190b;
+    transform: translateY(-1px);
+}
