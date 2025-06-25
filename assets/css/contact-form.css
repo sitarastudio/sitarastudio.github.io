@@ -1,21 +1,20 @@
 #contact {
     background: #1a1a1a;
-    color: #ffffff;
+    color: #363636;
     padding: 2em;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #contact header h2 {
-    color: #ffffff;
+    color: #363636;
     margin-bottom: 1em;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #contact header p {
-    color: #ffffff;
-    opacity: 0.8;
+    color: #999;
     margin-bottom: 2em;
     line-height: 1.5;
 }
