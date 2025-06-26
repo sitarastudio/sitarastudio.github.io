@@ -40,14 +40,14 @@
             margin-bottom: 20px;
         }
 
-        .content {
-            text-align: center;
-        }
-
         .sitara-img {
-            width: 100px;
-            height: auto;
+            width: 337.5px;
+            height: 337.5px;
             margin-bottom: 20px;
+            background: url('images/sitara copy.JPG') no-repeat center center;
+            background-size: contain;
+            display: block;
+            margin: 0 auto;
         }
 
         .link {
@@ -71,11 +71,11 @@
 </head>
 <body>
     <div class="background"></div>
-    <div class="content" style="z-index: 1;">
+    <div class="content">
         <div class="image-container">
-            <img src="images/sitara copy.jpg" alt="Sitara" class="sitara-img">
+            <div class="sitara-img"></div>
         </div>
-        <a href="index.html" class="link">[ who am i... ]</a>
+        <a href="index.html#home" class="link" target="_self">[ who am i... ]</a>
     </div>
 </body>
 </html>
