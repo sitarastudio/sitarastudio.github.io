@@ -10,11 +10,19 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv="refresh" content="0;url=intro.html">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/contact-form.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<!-- Redirect to intro page -->
+		<script>
+			// Immediately redirect to intro page
+			document.addEventListener('DOMContentLoaded', function() {
+				window.location.href = 'intro.html';
+			});
+		</script>
 		<!-- Carousel Modal -->
 		<div id="carousel-modal" class="modal" data-debug="modal">
 			<div class="modal-content" data-debug="content">
@@ -212,6 +220,11 @@
 
 		<script src="assets/js/particles.js"></script>
 		<script src="assets/js/carousel.js"></script>
-
+		<script>
+			// Redirect to intro page if not coming from it
+			if (!document.referrer.includes('intro.html')) {
+			  window.location.href = 'intro.html';
+			}
+		  </script>
 	</body>
 </html>
