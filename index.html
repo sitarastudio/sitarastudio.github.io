@@ -15,6 +15,23 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<!-- Carousel Modal -->
+		<div id="carousel-modal" class="modal" data-debug="modal">
+			<div class="modal-content" data-debug="content">
+				<span class="close" data-debug="close">&times;</span>
+				<div class="carousel-container" data-debug="container">
+					<div class="carousel-images" data-debug="images">
+						<!-- Images will be dynamically inserted here -->
+					</div>
+					<div class="carousel-controls" data-debug="controls">
+						<button class="prev" data-debug="prev">&lt;</button>
+						<button class="next" data-debug="next">&gt;</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
 
 		<!-- Wrapper-->
 			<div id="wrapper">
@@ -177,7 +194,24 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<!-- Carousel Modal -->
+		<div id="carousel-modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="carousel-container">
+					<div class="carousel-images">
+						<!-- Images will be dynamically inserted here -->
+					</div>
+					<div class="carousel-controls">
+						<button class="prev">&lt;</button>
+						<button class="next">&gt;</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<script src="assets/js/particles.js"></script>
+		<script src="assets/js/carousel.js"></script>
 
 	</body>
 </html>
