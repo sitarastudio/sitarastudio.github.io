@@ -2290,10 +2290,8 @@ input, select, textarea {
 
 #wrapper {
 	width: 100%;
-	max-width: 1600px;
 	margin: 0 auto;
 	min-height: 100vh;
-	padding: 0 1em;
 	padding: 3em 0;
 	display: flex;
 	flex-direction: column;
@@ -2311,22 +2309,61 @@ body.is-preload #wrapper {
 @media screen and (max-width: 1280px) {
 	#wrapper {
 		padding: 3em 0;
-		max-width: calc(100% - 6em);
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 736px) {
 	#wrapper {
 		padding: 1em 0;
-		max-width: calc(100% - 2em);
+		width: 100%;
 	}
 }
 
 @media screen and (max-width: 360px) {
 	#wrapper {
 		padding: 1em 0;
-		max-width: 100%;
+		width: 100%;
 	}
+}
+
+/* Main panel styles */
+#main > .panel {
+	width: 100%;
+	padding: 2em 1.5em 1.5em 1.5em;
+	box-sizing: border-box;
+}
+
+#main > .panel.intro {
+	display: block;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
+
+#main > .panel.intro header {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#main > .panel.intro .pic {
+	display: block;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#main > .panel.intro .pic img {
+	display: block;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	object-fit: contain;
 }
 
 /* Contact Panel */
@@ -2535,23 +2572,6 @@ body.is-preload #wrapper {
 
 				#main > .panel {
 					padding: 2em 1.5em 1.5em 1.5em;
-					width: 100%;
-					max-width: 100%;
-					overflow-x: hidden;
-				}
-
-				#main > .panel.intro .pic {
-					width: 100%;
-					height: auto;
-					max-width: 100%;
-					object-fit: contain;
-				}
-
-				#main > .panel.intro .pic img {
-					width: 100%;
-					height: auto;
-					max-width: 100%;
-					overflow: hidden;
 				}
 
 			}
