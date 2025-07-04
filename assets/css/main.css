@@ -2557,14 +2557,25 @@ body.is-preload #wrapper {
 		height: 400px;
 	}
 	
+	.carousel-controls {
+		display: flex;
+		justify-content: center;
+		gap: 5px;
+		bottom: 15px;
+	}
+	
 	.carousel-controls button {
 		padding: 8px 16px;
 		font-size: 14px;
-		margin: 0 3px;
+		margin: 0;
 	}
 	
-	.carousel-controls {
-		bottom: 15px;
+	.carousel-controls .prev {
+		margin-right: 5px;
+	}
+	
+	.carousel-controls .next {
+		margin-left: 5px;
 	}
 }		margin: 0 !important;
 		padding: 0.75em !important;
