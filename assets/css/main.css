@@ -2556,6 +2556,16 @@ body.is-preload #wrapper {
 	.carousel-container {
 		height: 400px;
 	}
+	
+	.carousel-controls button {
+		padding: 8px 16px;
+		font-size: 14px;
+		margin: 0 3px;
+	}
+	
+	.carousel-controls {
+		bottom: 15px;
+	}
 }		margin: 0 !important;
 		padding: 0.75em !important;
 		box-sizing: border-box !important;
