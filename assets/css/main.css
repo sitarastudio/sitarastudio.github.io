@@ -2530,12 +2530,13 @@ body.is-preload #wrapper {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	padding: 15px;
-	background: rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	background: #fff;
 	display: flex;
 	justify-content: center;
 	gap: 10px;
 	z-index: 10;
+	border-top: 1px solid #ddd;
 }
 
 .carousel-controls button {
@@ -2567,12 +2568,13 @@ body.is-preload #wrapper {
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		padding: 15px;
-		background: rgba(0, 0, 0, 0.8);
+		padding: 20px;
+		background: #fff;
 		display: flex;
 		justify-content: center;
 		gap: 10px;
 		z-index: 10;
+		border-top: 1px solid #ddd;
 	}
 	
 	.carousel-controls button {
@@ -2584,14 +2586,15 @@ body.is-preload #wrapper {
 		line-height: 40px;
 		text-align: center;
 		border-radius: 50%;
-		background: rgba(255, 255, 255, 0.8);
-		color: #000;
+		background: #000;
+		color: #fff;
 		border: none;
 		cursor: pointer;
+		transition: background-color 0.3s ease;
 	}
 	
 	.carousel-controls button:hover {
-		background: rgba(255, 255, 255, 1);
+		background: #333;
 	}
 }		margin: 0 !important;
 		padding: 0.75em !important;
