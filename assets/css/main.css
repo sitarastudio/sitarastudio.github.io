@@ -2529,14 +2529,14 @@ body.is-preload #wrapper {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 100%;
-	padding: 20px;
-	background: #fff;
+	right: 0;
 	display: flex;
-	justify-content: center;
-	gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
 	z-index: 10;
-	border-top: 1px solid #ddd;
+	height: 100%;
+	background: transparent;
 }
 
 .carousel-controls button {
@@ -2565,16 +2565,42 @@ body.is-preload #wrapper {
 	
 	.carousel-controls {
 		position: absolute;
-		bottom: 0;
+		top: 50%;
 		left: 0;
-		width: 100%;
-		padding: 20px;
-		background: #fff;
+		right: 0;
 		display: flex;
-		justify-content: center;
-		gap: 10px;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 20px;
 		z-index: 10;
-		border-top: 1px solid #ddd;
+		height: 100%;
+		background: transparent;
+	}
+	
+	.carousel-controls button {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 12px;
+		font-size: 16px;
+		background: rgba(0, 0, 0, 0.5);
+		color: white;
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		border-radius: 4px;
+	}
+	
+	.carousel-controls .prev {
+		left: 20px;
+	}
+	
+	.carousel-controls .next {
+		right: 20px;
+	}
+	
+	.carousel-controls button:hover {
+		background: rgba(0, 0, 0, 0.7);
 	}
 	
 	.carousel-controls button {
