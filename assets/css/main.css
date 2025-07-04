@@ -2531,6 +2531,10 @@ body.is-preload #wrapper {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 10;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	justify-content: center;
 }
 
 .carousel-controls button {
@@ -2559,7 +2563,7 @@ body.is-preload #wrapper {
 	
 	.carousel-controls {
 		display: flex;
-		justify-content: center;
+		flex-direction: row;
 		gap: 10px;
 		bottom: 15px;
 		position: absolute;
@@ -2575,14 +2579,15 @@ body.is-preload #wrapper {
 		height: 40px;
 		line-height: 40px;
 		text-align: center;
+		border-radius: 50%;
 	}
 	
 	.carousel-controls .prev {
-		border-radius: 50%;
+		margin-right: 5px;
 	}
 	
 	.carousel-controls .next {
-		border-radius: 50%;
+		margin-left: 5px;
 	}
 }		margin: 0 !important;
 		padding: 0.75em !important;
