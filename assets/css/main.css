@@ -2706,8 +2706,9 @@ body.is-preload #wrapper {
 
 	/* About Bio Text */
 	.panel.intro p {
-		font-size: 1.2em;
-		line-height: 1.6;
+		font-size: 1.8em;
+		line-height: 1.8;
+		font-weight: 300;
 	}
 
 	/* Services Section */
