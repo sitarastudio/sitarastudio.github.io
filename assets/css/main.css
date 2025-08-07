@@ -2766,6 +2766,23 @@ body.is-preload #wrapper {
 		margin-left: -1.5em;
 	}
 
+	/* Qualifications Panel */
+	.qualifications-panel {
+		background: #333;
+		color: #fff;
+		flex: 1 1 100%;
+		margin-top: 1em;
+	}
+
+	.qualifications-panel h3 {
+		color: #fff;
+		border-bottom-color: #555;
+	}
+
+	.qualifications-panel .service-content {
+		color: #eee;
+	}
+
 	@media (max-width: 768px) {
 		.service {
 			flex: 1 1 100%;
