@@ -1457,7 +1457,7 @@ input, select, textarea {
 	}
 
 	p, h1, h2, h3, h4, h5, h6, span, a {
-		font-family: 'Courier Prime', monospace !important;
+		font-family: 'Albert Sans', sans-serif !important;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1924,7 +1924,7 @@ input, select, textarea {
 
 		#nav .nav-button span {
 			display: block;
-			font-family: 'Courier Prime', monospace;
+			font-family: 'Albert Sans', sans-serif;
 			font-size: 1em;
 			font-weight: normal;
 			position: relative;
@@ -2187,7 +2187,7 @@ input, select, textarea {
 
 	#nav a span {
 		display: block;
-		font-family: 'Courier Prime', monospace;
+		font-family: 'Albert Sans', sans-serif;
 		font-size: 1em;
 		font-weight: normal;
 		text-shadow: 
@@ -2250,7 +2250,7 @@ input, select, textarea {
 
 		#nav a span {
 			display: block;
-			font-family: 'Courier Prime', monospace;
+			font-family: 'Albert Sans', sans-serif;
 			font-size: 1em;
 			font-weight: normal;
 			text-shadow: 
