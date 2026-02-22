@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="assets/css/contact-form.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Fix for About panel positioning */
+			/* Fix for About panel positioning only */
 			#home.panel.about-panel {
 				position: static !important;
 				display: block !important;
@@ -24,6 +24,14 @@
 				transform: none !important;
 				left: auto !important;
 				top: auto !important;
+			}
+			
+			#home.panel.about-panel.inactive {
+				display: none !important;
+			}
+			
+			#home.panel.about-panel:not(.inactive) {
+				display: block !important;
 			}
 			
 			.single-image-container {
