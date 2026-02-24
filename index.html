@@ -14,74 +14,12 @@
 		<link rel="stylesheet" href="assets/css/contact-form.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Only override specific elements we need, not the panel system */
+			/* Only override the background image we need */
 			.single-image-container {
 				background-image: url('images/jupi far.jpg') !important;
 				background-size: cover !important;
 				background-position: center !important;
 				background-repeat: no-repeat !important;
-			}
-			
-			/* Fix Music section spacing */
-			#music .row {
-				display: flex !important;
-				flex-wrap: wrap !important;
-				justify-content: flex-start !important;
-				gap: 0 !important;
-				margin: 0 !important;
-				padding: 0 !important;
-			}
-			
-			#music .col-4 {
-				flex: 0 0 auto !important;
-				width: auto !important;
-				max-width: 300px !important;
-				margin: 0 !important;
-				padding: 0 !important;
-			}
-			
-			#music .col-4 a.image.fit {
-				display: block !important;
-				margin: 0 !important;
-				padding: 0 !important;
-			}
-			
-			#music .col-4 img {
-				width: 300px !important;
-				height: 300px !important;
-				object-fit: cover !important;
-				display: block !important;
-				margin: 0 !important;
-				padding: 0 !important;
-			}
-			
-			/* Only affect About panel when it's the active one */
-			#home.panel.about-panel:not(.inactive) {
-				position: static !important;
-				display: block !important;
-				width: 100% !important;
-				height: auto !important;
-				opacity: 1 !important;
-				transform: none !important;
-				left: auto !important;
-				top: auto !important;
-				bottom: auto !important;
-				right: auto !important;
-			}
-			
-			#home.panel.about-panel:not(.inactive) .single-image-container {
-				position: relative !important;
-				width: 100% !important;
-				height: 100vh !important;
-				display: block !important;
-			}
-			
-			#home.panel.about-panel:not(.inactive) .artist-statement {
-				position: static !important;
-				display: block !important;
-				width: 100% !important;
-				height: auto !important;
-				margin-top: 0 !important;
 			}
 		</style>
 	</head>
@@ -138,15 +76,15 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- About Section with Single Image -->
-						<article id="home" class="panel about-panel">
-							<div class="single-image-container" style="width: 100%; height: 100vh; display: flex; align-items: center; justify-content: center;">
-								<div class="centered-text" style="text-align: center;">
+						<!-- About Section -->
+						<article id="home" class="panel">
+							<header style="height: 100vh; background-image: url('images/jupi far.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+								<div style="text-align: center;">
 									<h1 style="color: white; font-size: 4rem; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.8); margin: 0;">SITARA</h1>
 									<p style="color: #bdffbd; font-size: 1.2rem; font-weight: normal; margin-top: 10px; text-shadow: 1px 1px 2px rgba(0,0,0,0.8);">komodo ep out now</p>
 								</div>
-							</div>
-							<div class="artist-statement" style="background-color: black; padding: 60px 40px; color: white;">
+							</header>
+							<div style="background-color: black; padding: 60px 40px; color: white;">
 								<div style="max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.1rem;">
 									<h2 style="color: white; font-size: 2rem; font-weight: bold; margin-bottom: 30px; text-align: center;">Upcoming</h2>
 									<p style="text-align: center; margin-bottom: 50px; line-height: 1.6;">May 2 Malaysian Multichannel Performance<br>
