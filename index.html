@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="assets/css/contact-form.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Only override the specific elements we need, not the panel system */
+			/* Only override specific elements we need, not the panel system */
 			.single-image-container {
 				background-image: url('images/jupi far.jpg') !important;
 				background-size: cover !important;
@@ -55,8 +55,8 @@
 				padding: 0 !important;
 			}
 			
-			/* Force About panel to be static and flow properly */
-			#home.panel.about-panel {
+			/* Only affect About panel when it's the active one */
+			#home.panel.about-panel:not(.inactive) {
 				position: static !important;
 				display: block !important;
 				width: 100% !important;
@@ -69,14 +69,14 @@
 				right: auto !important;
 			}
 			
-			#home.panel.about-panel .single-image-container {
+			#home.panel.about-panel:not(.inactive) .single-image-container {
 				position: relative !important;
 				width: 100% !important;
 				height: 100vh !important;
 				display: block !important;
 			}
 			
-			#home.panel.about-panel .artist-statement {
+			#home.panel.about-panel:not(.inactive) .artist-statement {
 				position: static !important;
 				display: block !important;
 				width: 100% !important;
